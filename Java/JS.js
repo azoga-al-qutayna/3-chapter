@@ -1,28 +1,21 @@
-// const number = 4;
-// let result = false;
+let password;
 
-// while (!result) {
-//   const answer = prompt('Пароль?');
-//   if (answer === null) {
-//     break;
-//   }
-//   switch (+answer) {
-//     case number - 5:
-//     case number + 5:
-//       alert('Уже теплее!');
-//       break;
-//     case number - 2:
-//     case number + 2:
-//       alert('Горячо!');
-//       break;
-//     case number:
-//       alert('Ты угадал! Это число {040506}.');
-//       result = true;
-//       break;
-//     default:
-//       alert('Холодно!');
-//   }
-// }
+do {
+    password = prompt("Введите пароль");
+
+    if (password === null) {
+        alert("Вход отменён");
+        window.location.href = "about:blank";
+        break;
+    }
+
+} while (password !== "713144");
+
+if (password === "713144") {
+    alert("Добро пожаловать на сайт Азоги!");
+}
+
+
 
 // $(function() {
 
@@ -40,8 +33,6 @@ event.preventDefault();
 
 
 // });
-
-
 
 
 
